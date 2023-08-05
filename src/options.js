@@ -34,7 +34,7 @@ function saveOptions() {
 function restoreOptions() {
     chrome.storage.sync.get({
         obsidianVaultName: 'obsidian',
-        obsidianNoteName: 'Chrome Clippings',
+        obsidianNoteName: 'Browser Clippings',
         selectAsMarkdown: false,
         obsidianNoteFormat: `> {clip},
 

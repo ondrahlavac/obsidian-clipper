@@ -1,11 +1,11 @@
 {
-    "name": "Obsidian Clipper",
-    "version": "0.5.0",
+    "name": "Obsidian Clipper for Firefox",
+    "version": "0.5.x",
     "manifest_version": 3,
-    "description": "A small chrome plugin that let's you easily clip things to Obsidian",
-    "homepage_url": "https://github.com/jplattel/obsidian-clipper",
+    "description": "A small firefox plugin that let's you easily clip things to Obsidian",
+    "homepage_url": "https://github.com/ondrahlavac/obsidian-clipper",
     "background": {
-        "service_worker": "background.js",
+        "scripts": ["background.js"],
         "type": "module"
     },
     "options_ui": {
@@ -22,7 +22,7 @@
         "scripting"
     ],
     "host_permissions": [
-        "https://jplattel.github.io/obsidian-clipper/clip.html"
+        "https://ondrahlavac.github.io/obsidian-clipper/clip.html"
     ],
     "web_accessible_resources": [
         {
@@ -34,5 +34,10 @@
         "16": "icons/favicon-16x16.png",
         "48": "icons/favicon-48x48.png",
         "128": "icons/favicon-128x128.png"
+    },
+    "browser_specific_settings": {
+        "gecko": {
+          "id": "firefox-obsidian-clipper-addon@example.com"
+        }
     }
 }
